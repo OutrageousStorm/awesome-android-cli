@@ -1,28 +1,37 @@
-# ⚡ awesome-android-cli
+# ⚡ Awesome Android CLI
 
-Command-line tool to browse, install, and manage the awesome-android-customization tools directly from your terminal.
+Curated list of command-line tools for Android development, modding, and security research.
 
-## Install
-```bash
-pip install awesome-android-cli
-# or
-python3 cli.py
-```
+## ADB Alternatives & Wrappers
 
-## Usage
-```bash
-# Search for launchers
-awesome-android search launcher
+| Tool | Lang | What it does | Link |
+|------|------|-------------|------|
+| **scrcpy** | C | Screen mirror + control | https://github.com/Genymobile/scrcpy |
+| **adb-enhanced** | Python | Better ADB wrapper | https://github.com/ashishb/adb-enhanced |
+| **androidtool-mac** | Go | Native ADB GUI (macOS) | https://github.com/mortenjust/androidtool-mac |
+| **dad** | Go | Dead ADB — fast ADB alternative | https://github.com/dadroidcli/dadroid |
 
-# Show a specific tool
-awesome-android show nova-launcher
+## APK Analysis
 
-# Install (requires ADB)
-awesome-android install apex-launcher
+| Tool | What it does | Link |
+|------|-------------|------|
+| **apktool** | Decompile/recompile APKs | https://apktool.org |
+| **jadx** | Decompile to Java | https://github.com/skylot/jadx |
+| **MobSF** | Mobile Security Framework | https://github.com/MobSF/Mobile-Security-Framework-MobSF |
+| **APKLeaks** | Find secrets in APKs | https://github.com/dwisiswant0/apkleaks |
 
-# Rate/review tools
-awesome-android rate nova-launcher --rating 5 --comment "Amazing!!"
+## Device Management
 
-# List all by category
-awesome-android list -c customization
-```
+| Tool | What it does | Link |
+|------|-------------|------|
+| **fastboot** | Flashable images | Official Android tools |
+| **heimdall** | Odin alternative (Samsung) | https://github.com/Benjamin-Dobell/Heimdall |
+| **Termux** | Linux on Android | https://termux.dev |
+
+## Reverse Engineering
+
+| Tool | What it does | Link |
+|------|-------------|------|
+| **Frida** | Dynamic instrumentation | https://frida.re |
+| **Objection** | Frida wrapper | https://github.com/sensepost/objection |
+| **Radare2** | Binary analysis | https://radare.org |
